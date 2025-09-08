@@ -6,11 +6,11 @@ export default function Home() {
   useEffect(() => {
     const styleTag = document.createElement('style');
     styleTag.type = 'text/css';
-    styleTag.innerHTML = \`
-      * {
-        cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym98.cur), auto !important;
-      }
-    \`;
+styleTag.innerHTML = `
+  * {
+    cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym98.cur), auto !important;
+  }
+`;
     document.head.appendChild(styleTag);
     return () => {
       document.head.removeChild(styleTag);
